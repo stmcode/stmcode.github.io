@@ -199,7 +199,7 @@ jingle_bells
 
 The syntax here is a bit confusing for two reasonse:
 
-* We have to change the order of how we apply the functions. This is because what one function outputs needs to be acceptable for the next output; the `off` function can't be after the `note()` function as it brings the data out of the correct type.
+* We have to change the order of how we apply the functions. This is because what one function outputs needs to be acceptable for the next output; the `add` function within the `off` function works on note values before they are transformed - so it must be applied at this step!
 * The second argument in the `off` function is an *anonymous function* - that is, we define a custom function to let `off` what to do with the offset notes. Here we are just taking their note value and adding `12` semitones (or an octave).
 
 `sometimes()` works very similarly:
