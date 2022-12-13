@@ -4,7 +4,10 @@ title:  "Algorithmic Music with Strudel"
 date:   2022-11-27 15:16:33 +0000
 categories: jekyll update
 ---
-Today we're going to learn Javascript and functional programming by using the [*Strudel* Javascript framework](https://strudel.tidalcycles.org/), which is a Javascript implementation of the [*TidalCycles* Haskell framework](https://tidalcycles.org).
+Today we'll learn how to code by creating our own music pieces like this one: [link](https://www.youtube.com/watch?v=qkTJTf7Yvk8)
+The type of coding we'll be learning is called functional programming. We'll be using a framework (a wrapper around programming language) called [*Strudel* Javascript framework](https://strudel.tidalcycles.org/). 
+FYI There is a similar framework build in another language (Haskell) called [*TidalCycles* Haskell framework](https://tidalcycles.org)
+
 
 Strudel aims to be a drop-in replacement for TidalCycles, which currently requires a bit of an annoying setup to run - however it is one of the most popular [livecoding](https://en.wikipedia.org/wiki/Live_coding) frameworks used by artists to generate new sounds. Some examples of algorithmic music artists include PC Music and Charli XCX collaborator Lil Data ([example 1](https://youtu.be/EqbXAk0Xm-I), [example 2](https://youtu.be/KdSiv7unrx8)), and dance music duo Autechre ([example 1](https://www.youtube.com/watch?v=qkTJTf7Yvk8), [example 2](https://youtu.be/-F665Mkc0D0)).
 
@@ -86,7 +89,7 @@ stack(
 
 What does this do?
 
-Well the `samples` function is in charge of loading new samples into Strudel. It takes 2 arguments (separated by a comma) - the second is the location of where Strudel should start looking for the files - in our case, this is a GitHub code repository [here](https://github.com/tidalcycles/Dirt-Samples). This repository has lots of folders containing `.wav` sound files that we need to tell Strudel what to do with. That's where the first argument comes in - it's a list of pairs (with a `:` in between), first telling what strudel should map the sound do (in our case, we are asking it to override `bd`, `cp`, and `hh`, but you can use custom names if you want), and the second telling it where to find these samples in the directory we just pointed to.
+Well the `samples` function is in charge of loading new samples into Strudel. It takes 2 arguments (separated by a comma) - the second is the location of where Strudel should start looking for the files - in our case, this is a GitHub code repository [here](https://github.com/tidalcycles/Dirt-Samples). GitHub can be thought of as a website used to store your code/small files. This repository(GitHub folder) has lots of folders containing `.wav` sound files that we need to tell Strudel what to do with. That's where the first argument comes in - it's a list of pairs (with a `:` in between), first telling what strudel should map the sound do (in our case, we are asking it to override `bd`, `cp`, and `hh`, but you can use custom names if you want), and the second telling it where to find these samples in the directory we just pointed to.
 
 Is this a huge headache? Yes - but this allows us to programatically download samples from other areas of the internet! If you want to upload your own files to Strudel, I'd recommend using the same method as above with your own GitHub repository.
 
