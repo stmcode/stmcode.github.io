@@ -6,10 +6,8 @@ categories: jekyll update
 ---
 Today we'll learn how to code by creating our own music pieces like this one: [link](https://www.youtube.com/watch?v=qkTJTf7Yvk8)
 The type of coding we'll be learning is called functional programming. We'll be using a framework (a wrapper around programming language) called [*Strudel* Javascript framework](https://strudel.tidalcycles.org/). 
-FYI There is a similar framework build in another language called Haskell called [*TidalCycles* Haskell framework](https://tidalcycles.org).
+FYI There is a similar framework build in another language (Haskell) called [*TidalCycles* Haskell framework](https://tidalcycles.org)
 
-
-Today we're going to learn Javascript and functional programming by using the [*Strudel* Javascript framework](https://strudel.tidalcycles.org/), which is a Javascript implementation of the [*TidalCycles* Haskell framework](https://tidalcycles.org).
 
 Strudel aims to be a drop-in replacement for TidalCycles, which currently requires a bit of an annoying setup to run - however it is one of the most popular [livecoding](https://en.wikipedia.org/wiki/Live_coding) frameworks used by artists to generate new sounds. Some examples of algorithmic music artists include PC Music and Charli XCX collaborator Lil Data ([example 1](https://youtu.be/EqbXAk0Xm-I), [example 2](https://youtu.be/KdSiv7unrx8)), and dance music duo Autechre ([example 1](https://www.youtube.com/watch?v=qkTJTf7Yvk8), [example 2](https://youtu.be/-F665Mkc0D0)).
 
